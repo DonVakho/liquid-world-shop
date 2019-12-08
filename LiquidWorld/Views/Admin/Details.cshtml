@@ -1,0 +1,28 @@
+﻿@model LiquidWorld.Data.Models.Drink
+
+<div class="container marginTop">
+    <div class="row">
+        <div class="card">
+            <div class="text-center view overlay hm-white-slight">
+                <img src="@Model.ImageUrl" class="img-fluid" alt="">
+                <a href="#">
+                    <div class="mask waves-effect waves-light"></div>
+                </a>
+            </div>
+            <div class="card-block">
+                <!--Title-->
+                <h4 class="card-title">@Model.Name</h4>
+                <!--Text-->
+                <p class="card-text">@Model.LongDescription.</p>
+                <p class="btn btn-group pull-right">
+                    <input type="button" value="Back To List" onclick="location.href = '@Url.Action("Index")'"/>
+                    <input type="button" value="Buy" onclick="location.href = '@Url.Action("AddToShoppingCart", "ShoppingCart", new { @drinkId = Model })'"/>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DrinkId }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.DrinkId })
+</p>

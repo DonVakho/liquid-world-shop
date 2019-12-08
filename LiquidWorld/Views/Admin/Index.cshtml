@@ -1,0 +1,19 @@
+﻿@model IEnumerable<LiquidWorld.Data.Models.Drink>
+
+<p>
+    <button type="button" class="btn btn-success btn-block" onclick="location.href = '@Url.Action("Create", "Admin")'">Add New Drink</button>
+</p>
+<div class="row marginTop">
+    @foreach (var item in Model)
+    {
+        @Html.Partial("_DrinkSummaryAdmin", item)
+    }
+    <div>
+
+        <p>
+            <button type="button" class="btn btn-success btn-block" style="float: right" onclick="location.href = '@Url.Action("Index", "Categories")'">Edit Categories</button>
+        </p>
+
+    </div>
+</div>
+

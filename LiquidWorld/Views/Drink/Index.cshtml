@@ -1,0 +1,9 @@
+﻿@using LiquidWorld.Data.Models
+@model IEnumerable<LiquidWorld.Data.Models.Drink>
+
+<div class="row marginTop">
+    @foreach (Drink item in Model)
+    {
+        @Html.Partial("DrinksSummary", item)
+    }
+</div>

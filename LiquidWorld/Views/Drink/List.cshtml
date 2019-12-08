@@ -1,0 +1,18 @@
+﻿@using LiquidWorld.Data.Models
+@model LiquidWorld.ViewModels.DrinksListViewModel
+
+<div class="row marginTop">
+    @if (!Model.Drinks.Any())
+    {
+        <h3>No Resulets Were Found :(</h3>
+        <h3>Please Try To Search For Another Drink !</h3>
+    }
+    else
+    {
+        foreach (Drink drink in Model.Drinks)
+        {
+            @Html.Partial("DrinksSummary", drink)
+        }
+    }
+
+</div>
