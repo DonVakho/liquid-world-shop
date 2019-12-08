@@ -1,6 +1,6 @@
 |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 |----------------------------------------------------------------------------------
-| Group Members : Vakhtang Donadze
+| Author : Vakhtang Donadze
 |----------------------------------------------------------------------------------
 |XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 |----------------------------------------------------------------------------------
